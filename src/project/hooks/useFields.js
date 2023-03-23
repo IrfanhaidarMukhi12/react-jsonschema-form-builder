@@ -9,7 +9,7 @@ export const useFields = (structureJsonSchemaOfModalFields) => {
         if (result.enumKeys.length > 0) {
             newFields.properties.sections = {
                 type: "string",
-                title: "Sección donde estará este campo",
+                title: "Section where this field will be",
                 enum: [
                     "root",
                     ...result.enumKeys

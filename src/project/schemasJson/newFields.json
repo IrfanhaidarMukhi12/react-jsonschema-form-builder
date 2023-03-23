@@ -1,5 +1,5 @@
 {
-    "title": "Ingrese un nuevo campo",
+    "title": "Enter a new field",
     "description": "",
     "type": "object",
     "required": [
@@ -9,7 +9,7 @@
     "properties": {
         "fieldType": {
             "type": "string",
-            "title": "Tipo de campo",
+            "title": "field type",
             "enum": [
                 "Input",
                 "Select",
@@ -18,23 +18,23 @@
                 "Date"
             ],
             "enumNames": [
-                "Entrada de texto",
+                "text input",
                 "Selector",
                 "CheckBox",
-                "Archivo",
-                "Fecha"
+                "Archive",
+                "Date"
             ]
         },
         "title": {
             "type": "string",
-            "title": "Título del campo"
+            "title": "field title"
         },
         "description": {
             "type": "string",
-            "title": "Descripción del campo"
+            "title": "Field Description"
         },
         "check_id": {
-            "title": "ID automático",
+            "title": "auto ID",
             "type": "boolean",
             "default": true,
             "enum": [
@@ -44,7 +44,7 @@
         },
         "required": {
             "type": "boolean",
-            "title": "¿Es un campo obligatorio?",
+            "title": "is it a required field",
             "default": false
         }
     },
@@ -60,7 +60,7 @@
                         },
                         "options": {
                             "type": "array",
-                            "title": "Campos de tu selector",
+                            "title": "selector",
                             "items": {
                                 "type": "string"
                             }
@@ -79,7 +79,7 @@
                         },
                         "enableFiles": {
                             "type": "string",
-                            "title": "Tipo de archivo permitido",
+                            "title": "Allowed file type",
                             "enum": [
                                 ".pdf",
                                 "image/*"
@@ -118,7 +118,7 @@
                         },
                         "id": {
                             "type": "string",
-                            "title": "Id del campo"
+                            "title": "field id"
                         }
                     },
                     "required": [
